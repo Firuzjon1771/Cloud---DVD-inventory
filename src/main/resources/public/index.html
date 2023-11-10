@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DVD Inventory Management</title>
+</head>
+<body>
+<h1>Welcome to DVD Inventory Management</h1>
+<p>This service allows you to view a list of DVDs and access their details.</p>
+<p>Administrators can also update DVD information.</p>
+<hr/>
+<a href="api/dvds">GET ALL DVDs</a>
+<hr/>
+<form id="form1">
+<label>DVD ISBN</label>
+<input id="isbn" name="isbn" type="text"/>
+<button type="submit" onclick="window.open(window.location.href + 'api/dvds/' + document.getElementById('isbn').value)">DVD Details</button>
+<button type="reset">Reset</button>
+</form>
+</body>
+</html>
